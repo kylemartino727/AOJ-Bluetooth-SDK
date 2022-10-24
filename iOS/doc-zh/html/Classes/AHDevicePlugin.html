@@ -1,0 +1,2886 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AHDevicePlugin Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AHDevicePluginDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AOJMedical</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/defaultPlugin">+ defaultPlugin</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addDevice:">- addDevice:</option>
+		
+		<option value="//api/name/addDevice:autoConnect:">- addDevice:autoConnect:</option>
+		
+		<option value="//api/name/addDevice:forKey:">- addDevice:forKey:</option>
+		
+		<option value="//api/name/addDeviceWorkerCache:worker:delegate:">- addDeviceWorkerCache:worker:delegate:</option>
+		
+		<option value="//api/name/addPushRequest:forResponse:forDevice:">- addPushRequest:forResponse:forDevice:</option>
+		
+		<option value="//api/name/addSyncWorker:forKey:">- addSyncWorker:forKey:</option>
+		
+		<option value="//api/name/appendlog:">- appendlog:</option>
+		
+		<option value="//api/name/callbackDeviceConnectState:forDevice:">- callbackDeviceConnectState:forDevice:</option>
+		
+		<option value="//api/name/callbackPairedResults:forDevice:delegate:">- callbackPairedResults:forDevice:delegate:</option>
+		
+		<option value="//api/name/cancelAllDeviceConnection">- cancelAllDeviceConnection</option>
+		
+		<option value="//api/name/cancelDeviceConnection:">- cancelDeviceConnection:</option>
+		
+		<option value="//api/name/cancelDevicePairing:">- cancelDevicePairing:</option>
+		
+		<option value="//api/name/checkConnectState:">- checkConnectState:</option>
+		
+		<option value="//api/name/checkDeviceInfo:">- checkDeviceInfo:</option>
+		
+		<option value="//api/name/checkRestoreScanPermission">- checkRestoreScanPermission</option>
+		
+		<option value="//api/name/checkingBluetoothStatus:">- checkingBluetoothStatus:</option>
+		
+		<option value="//api/name/clearPeripheralCache">- clearPeripheralCache</option>
+		
+		<option value="//api/name/deviceSync:didMeasureDataUpdate:">- deviceSync:didMeasureDataUpdate:</option>
+		
+		<option value="//api/name/deviceSyncDidInformationUpdate:">- deviceSyncDidInformationUpdate:</option>
+		
+		<option value="//api/name/deviceSyncDidRequestCancelSync:">- deviceSyncDidRequestCancelSync:</option>
+		
+		<option value="//api/name/exportLogFiles:">- exportLogFiles:</option>
+		
+		<option value="//api/name/findMeasureDeviceWithDeviceId:">- findMeasureDeviceWithDeviceId:</option>
+		
+		<option value="//api/name/findTargetMeasureDevice:">- findTargetMeasureDevice:</option>
+		
+		<option value="//api/name/getDevice:">- getDevice:</option>
+		
+		<option value="//api/name/getDeviceSyncWorker:">- getDeviceSyncWorker:</option>
+		
+		<option value="//api/name/getDeviceWorker:">- getDeviceWorker:</option>
+		
+		<option value="//api/name/getDevices">- getDevices</option>
+		
+		<option value="//api/name/getPairingDelegate:">- getPairingDelegate:</option>
+		
+		<option value="//api/name/handlePairResults:forDevice:">- handlePairResults:forDevice:</option>
+		
+		<option value="//api/name/handleScanResult:peripheral:">- handleScanResult:peripheral:</option>
+		
+		<option value="//api/name/initPlugin:">- initPlugin:</option>
+		
+		<option value="//api/name/initPluginWithDispatch:options:">- initPluginWithDispatch:options:</option>
+		
+		<option value="//api/name/openDebugMode:">- openDebugMode:</option>
+		
+		<option value="//api/name/pairDevice:delegate:">- pairDevice:delegate:</option>
+		
+		<option value="//api/name/pushMessageDidResponse:forMessage:forDevice:">- pushMessageDidResponse:forMessage:forDevice:</option>
+		
+		<option value="//api/name/pushSetting:toDevice:response:">- pushSetting:toDevice:response:</option>
+		
+		<option value="//api/name/queryConnectClient:form:">- queryConnectClient:form:</option>
+		
+		<option value="//api/name/queryPushRequest:">- queryPushRequest:</option>
+		
+		<option value="//api/name/removeDevice:">- removeDevice:</option>
+		
+		<option value="//api/name/removeDevicePairWorker:">- removeDevicePairWorker:</option>
+		
+		<option value="//api/name/removePairingDelegate:">- removePairingDelegate:</option>
+		
+		<option value="//api/name/removePushRequest:">- removePushRequest:</option>
+		
+		<option value="//api/name/removeSyncWorker:">- removeSyncWorker:</option>
+		
+		<option value="//api/name/saveDebugMessage:forFileDirectory:">- saveDebugMessage:forFileDirectory:</option>
+		
+		<option value="//api/name/scanCentreDidScanResults:peripheral:">- scanCentreDidScanResults:peripheral:</option>
+		
+		<option value="//api/name/scanCentreDidSystemPairedResults:">- scanCentreDidSystemPairedResults:</option>
+		
+		<option value="//api/name/searchDevice:results:">- searchDevice:results:</option>
+		
+		<option value="//api/name/setDevices:">- setDevices:</option>
+		
+		<option value="//api/name/startAutoConnect:">- startAutoConnect:</option>
+		
+		<option value="//api/name/startupDataSync">- startupDataSync</option>
+		
+		<option value="//api/name/stopAutoConnect">- stopAutoConnect</option>
+		
+		<option value="//api/name/stopSearch">- stopSearch</option>
+		
+		<option value="//api/name/syncModeDidConnectionStateChange:forDevice:forPeripheral:">- syncModeDidConnectionStateChange:forDevice:forPeripheral:</option>
+		
+		<option value="//api/name/syncModeDidDeviceDataUpdate:forDevice:forPeripheral:">- syncModeDidDeviceDataUpdate:forDevice:forPeripheral:</option>
+		
+		<option value="//api/name/systemDidBluetoothStatusChange:">- systemDidBluetoothStatusChange:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AHDevicePlugin Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AHDevicePlugin.h<br />AHDevicePlugin.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultPlugin" title="defaultPlugin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultPlugin">+&nbsp;defaultPlugin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+获取实例对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)defaultPlugin</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+获取实例对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initPlugin:" title="initPlugin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initPlugin:">&ndash;&nbsp;initPlugin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+采用系统默认配置的蓝牙初始化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initPlugin:(dispatch_queue_t)<em>dispatchQueue</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+采用系统默认配置的蓝牙初始化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initPluginWithDispatch:options:" title="initPluginWithDispatch:options:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initPluginWithDispatch:options:">&ndash;&nbsp;initPluginWithDispatch:options:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+带可选项的系统蓝牙初始化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initPluginWithDispatch:(dispatch_queue_t)<em>queue</em> options:(nullable NSDictionary&lt;NSString*,id&gt; *)<em>options</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+带可选项的系统蓝牙初始化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveDebugMessage:forFileDirectory:" title="saveDebugMessage:forFileDirectory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveDebugMessage:forFileDirectory:">&ndash;&nbsp;saveDebugMessage:forFileDirectory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+将调试信息保存到相应的文件目录中</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveDebugMessage:(BOOL)<em>enable</em> forFileDirectory:(NSString *_Nonnull)<em>filePath</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+将调试信息保存到相应的文件目录中</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openDebugMode:" title="openDebugMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openDebugMode:">&ndash;&nbsp;openDebugMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+打开调试模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openDebugMode:(NSString *_Nonnull)<em>permissionKey</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+打开调试模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appendlog:" title="appendlog:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appendlog:">&ndash;&nbsp;appendlog:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+在文件中记录调试信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)appendlog:(NSString *_Nonnull)<em>msg</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+在文件中记录调试信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkingBluetoothStatus:" title="checkingBluetoothStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkingBluetoothStatus:">&ndash;&nbsp;checkingBluetoothStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+检查手机蓝牙状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkingBluetoothStatus:(id&lt;AHBluetoothStatusDelegate&gt; _Nonnull)<em>bleStatusDelegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+检查手机蓝牙状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchDevice:results:" title="searchDevice:results:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchDevice:results:">&ndash;&nbsp;searchDevice:results:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+根据指定条件搜索设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)searchDevice:(BTScanFilter *)<em>filter</em> results:(SearchResultsBlock _Nonnull)<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+根据指定条件搜索设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopSearch" title="stopSearch"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopSearch">&ndash;&nbsp;stopSearch</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+停止搜索</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)stopSearch</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+停止搜索</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkConnectState:" title="checkConnectState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkConnectState:">&ndash;&nbsp;checkConnectState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+根据广播ID,检查设备当前的连接状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BTConnectState)checkConnectState:(NSString *_Nonnull)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+根据广播ID,检查设备当前的连接状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearPeripheralCache" title="clearPeripheralCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearPeripheralCache">&ndash;&nbsp;clearPeripheralCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+清空CBPeripheral对象缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearPeripheralCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+清空CBPeripheral对象缓存</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exportLogFiles:" title="exportLogFiles:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exportLogFiles:">&ndash;&nbsp;exportLogFiles:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>导出日志文件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *_Nullable)exportLogFiles:(NSString *_Nullable)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>导出日志文件</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Sync Methods" name="task_Sync Methods"></a>
+						<h2 class="task-title">Sync Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getDevices" title="getDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDevices">&ndash;&nbsp;getDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getDevices</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDevices:" title="setDevices:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDevices:">&ndash;&nbsp;setDevices:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+设置测量设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setDevices:(NSArray *)<em>list</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+设置测量设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDevice:" title="addDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDevice:">&ndash;&nbsp;addDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+添加单个测量设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addDevice:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+添加单个测量设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeDevice:" title="removeDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeDevice:">&ndash;&nbsp;removeDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+根据广播ID删除单个测量设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)removeDevice:(NSString *)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+根据广播ID删除单个测量设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startAutoConnect:" title="startAutoConnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startAutoConnect:">&ndash;&nbsp;startAutoConnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+启动测量数据接收服务</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)startAutoConnect:(id&lt;AHDeviceDataDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+启动测量数据接收服务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopAutoConnect" title="stopAutoConnect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopAutoConnect">&ndash;&nbsp;stopAutoConnect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+停止测量数据接收服务</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)stopAutoConnect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+停止测量数据接收服务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceSyncWorker:" title="getDeviceSyncWorker:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceSyncWorker:">&ndash;&nbsp;getDeviceSyncWorker:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+根据设备广播ID查询GattClient</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBGattClient *)getDeviceSyncWorker:(NSString *)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+根据设备广播ID查询GattClient</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDevice:autoConnect:" title="addDevice:autoConnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDevice:autoConnect:">&ndash;&nbsp;addDevice:autoConnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将设备保存到缓存map</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addDevice:(BTDeviceInfo *)<em>lsDevice</em> autoConnect:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>将设备保存到缓存map</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkDeviceInfo:" title="checkDeviceInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkDeviceInfo:">&ndash;&nbsp;checkDeviceInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>检查设备信息是否有效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)checkDeviceInfo:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>检查设备信息是否有效</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startupDataSync" title="startupDataSync"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startupDataSync">&ndash;&nbsp;startupDataSync</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>启动数据同步服务</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)startupDataSync</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>启动数据同步服务</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkRestoreScanPermission" title="checkRestoreScanPermission"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkRestoreScanPermission">&ndash;&nbsp;checkRestoreScanPermission</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断恢复扫描的权限</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)checkRestoreScanPermission</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断恢复扫描的权限</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDevice:" title="getDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDevice:">&ndash;&nbsp;getDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从Device Map中查找指定的设备对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BTDeviceInfo *)getDevice:(NSString *)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>从Device Map中查找指定的设备对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeSyncWorker:" title="removeSyncWorker:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeSyncWorker:">&ndash;&nbsp;removeSyncWorker:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除设备数据同步工作者</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeSyncWorker:(NSString *)<em>key</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除设备数据同步工作者</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addSyncWorker:forKey:" title="addSyncWorker:forKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSyncWorker:forKey:">&ndash;&nbsp;addSyncWorker:forKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将数据同步工作者对象保存到缓存map</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addSyncWorker:(IBGattClient *)<em>worker</em> forKey:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>将数据同步工作者对象保存到缓存map</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDevice:forKey:" title="addDevice:forKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDevice:forKey:">&ndash;&nbsp;addDevice:forKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将设备保存到缓存map</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)addDevice:(BTDeviceInfo *)<em>lsDevice</em> forKey:(NSString *)<em>deviceKey</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>将设备保存到缓存map</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelAllDeviceConnection" title="cancelAllDeviceConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelAllDeviceConnection">&ndash;&nbsp;cancelAllDeviceConnection</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>断开所有设备的连接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelAllDeviceConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>断开所有设备的连接</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelDeviceConnection:" title="cancelDeviceConnection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelDeviceConnection:">&ndash;&nbsp;cancelDeviceConnection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>断开指定设备的连接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelDeviceConnection:(NSString *)<em>broadcastId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>断开指定设备的连接</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/findMeasureDeviceWithDeviceId:" title="findMeasureDeviceWithDeviceId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/findMeasureDeviceWithDeviceId:">&ndash;&nbsp;findMeasureDeviceWithDeviceId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据扫描结,比较设备ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BTDeviceInfo *)findMeasureDeviceWithDeviceId:(NSString *)<em>deviceId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据扫描结,比较设备ID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/findTargetMeasureDevice:" title="findTargetMeasureDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/findTargetMeasureDevice:">&ndash;&nbsp;findTargetMeasureDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据扫描结果，从设备缓存map中查找目标测量设备对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BTDeviceInfo *)findTargetMeasureDevice:(BTDeviceInfo *)<em>scanResult</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据扫描结果，从设备缓存map中查找目标测量设备对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleScanResult:peripheral:" title="handleScanResult:peripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleScanResult:peripheral:">&ndash;&nbsp;handleScanResult:peripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>扫描结果处理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handleScanResult:(BTDeviceInfo *)<em>lsDevice</em> peripheral:(CBPeripheral *)<em>peripheral</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>扫描结果处理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/callbackDeviceConnectState:forDevice:" title="callbackDeviceConnectState:forDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/callbackDeviceConnectState:forDevice:">&ndash;&nbsp;callbackDeviceConnectState:forDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>回调设备的连接状态改变</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)callbackDeviceConnectState:(BTConnectState)<em>connectState</em> forDevice:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>回调设备的连接状态改变</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/systemDidBluetoothStatusChange:" title="systemDidBluetoothStatusChange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/systemDidBluetoothStatusChange:">&ndash;&nbsp;systemDidBluetoothStatusChange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>系统蓝牙状态改变回调通知</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)systemDidBluetoothStatusChange:(CBManagerState)<em>bleState</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>系统蓝牙状态改变回调通知</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanCentreDidScanResults:peripheral:" title="scanCentreDidScanResults:peripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanCentreDidScanResults:peripheral:">&ndash;&nbsp;scanCentreDidScanResults:peripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>扫描结果回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanCentreDidScanResults:(BTDeviceInfo *)<em>lsDevice</em> peripheral:(CBPeripheral *)<em>peripheral</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>扫描结果回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanCentreDidSystemPairedResults:" title="scanCentreDidSystemPairedResults:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanCentreDidSystemPairedResults:">&ndash;&nbsp;scanCentreDidSystemPairedResults:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>系统已配对的设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanCentreDidSystemPairedResults:(NSArray *)<em>pairedDevices</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>系统已配对的设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/syncModeDidConnectionStateChange:forDevice:forPeripheral:" title="syncModeDidConnectionStateChange:forDevice:forPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/syncModeDidConnectionStateChange:forDevice:forPeripheral:">&ndash;&nbsp;syncModeDidConnectionStateChange:forDevice:forPeripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备连接状态改变</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)syncModeDidConnectionStateChange:(BTConnectState)<em>state</em> forDevice:(BTDeviceInfo *)<em>device</em> forPeripheral:(CBPeripheral *)<em>perihperal</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备连接状态改变</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/syncModeDidDeviceDataUpdate:forDevice:forPeripheral:" title="syncModeDidDeviceDataUpdate:forDevice:forPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/syncModeDidDeviceDataUpdate:forDevice:forPeripheral:">&ndash;&nbsp;syncModeDidDeviceDataUpdate:forDevice:forPeripheral:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备数据包上传通知</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)syncModeDidDeviceDataUpdate:(id)<em>data</em> forDevice:(BTDeviceInfo *)<em>device</em> forPeripheral:(CBPeripheral *)<em>perihperal</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备数据包上传通知</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSyncDidRequestCancelSync:" title="deviceSyncDidRequestCancelSync:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSyncDidRequestCancelSync:">&ndash;&nbsp;deviceSyncDidRequestCancelSync:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A3产品，请求取消同步</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceSyncDidRequestCancelSync:(IBGattClient *)<em>worker</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A3产品，请求取消同步</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSyncDidInformationUpdate:" title="deviceSyncDidInformationUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSyncDidInformationUpdate:">&ndash;&nbsp;deviceSyncDidInformationUpdate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceSyncDidInformationUpdate:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSync:didMeasureDataUpdate:" title="deviceSync:didMeasureDataUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSync:didMeasureDataUpdate:">&ndash;&nbsp;deviceSync:didMeasureDataUpdate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短连接设备，测量数据回调接口
+eg: A2、A3</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceSync:(BTDeviceInfo *)<em>lsDevice</em> didMeasureDataUpdate:(id)<em>obj</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短连接设备，测量数据回调接口
+eg: A2、A3</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Sync.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Push Methods" name="task_Push Methods"></a>
+						<h2 class="task-title">Push Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/pushSetting:toDevice:response:" title="pushSetting:toDevice:response:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pushSetting:toDevice:response:">&ndash;&nbsp;pushSetting:toDevice:response:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推送设备设置 消息指令</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pushSetting:(BTDeviceSetting *_Nonnull)<em>setting</em> toDevice:(BTDeviceInfo *_Nonnull)<em>device</em> response:(IBPushRespBlock _Nonnull)<em>resp</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推送设备设置 消息指令</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryConnectClient:form:" title="queryConnectClient:form:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryConnectClient:form:">&ndash;&nbsp;queryConnectClient:form:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从连接缓存中，查找设备当前的连接状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBGattClient *)queryConnectClient:(NSString *)<em>broadcastId</em> form:(NSMutableDictionary *)<em>map</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>从连接缓存中，查找设备当前的连接状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryPushRequest:" title="queryPushRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryPushRequest:">&ndash;&nbsp;queryPushRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询应用消息推送设置请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBPushRespBlock)queryPushRequest:(NSString *)<em>key</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询应用消息推送设置请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPushRequest:forResponse:forDevice:" title="addPushRequest:forResponse:forDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPushRequest:forResponse:forDevice:">&ndash;&nbsp;addPushRequest:forResponse:forDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加应用消息推送设置请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addPushRequest:(IBPushMessage *)<em>msg</em> forResponse:(IBPushRespBlock)<em>block</em> forDevice:(NSString *)<em>deviceKey</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加应用消息推送设置请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removePushRequest:" title="removePushRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removePushRequest:">&ndash;&nbsp;removePushRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除应用消息推送设置请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removePushRequest:(NSString *)<em>msgId</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除应用消息推送设置请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pushMessageDidResponse:forMessage:forDevice:" title="pushMessageDidResponse:forMessage:forDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pushMessageDidResponse:forMessage:forDevice:">&ndash;&nbsp;pushMessageDidResponse:forMessage:forDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>应用消息设置回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pushMessageDidResponse:(IBPushResponse *)<em>resp</em> forMessage:(NSString *)<em>msgId</em> forDevice:(BTDeviceInfo *)<em>device</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>应用消息设置回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Push.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Pair Methods" name="task_Pair Methods"></a>
+						<h2 class="task-title">Pair Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/pairDevice:delegate:" title="pairDevice:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pairDevice:delegate:">&ndash;&nbsp;pairDevice:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 2.0.0
+绑定设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)pairDevice:(BTDeviceInfo *)<em>lsDevice</em> delegate:(id&lt;AHDevicePairingDelegate&gt;)<em>pairedDelegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 2.0.0
+绑定设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelDevicePairing:" title="cancelDevicePairing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelDevicePairing:">&ndash;&nbsp;cancelDevicePairing:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Added in version 1.0.0
+取消设备的配对操作 或删除缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelDevicePairing:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Added in version 1.0.0
+取消设备的配对操作 或删除缓存</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPairingDelegate:" title="getPairingDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPairingDelegate:">&ndash;&nbsp;getPairingDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据设备mac，获取相应代理对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AHDevicePairingDelegate&gt;)getPairingDelegate:(NSString *)<em>deviceMac</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据设备mac，获取相应代理对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceWorker:" title="getDeviceWorker:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceWorker:">&ndash;&nbsp;getDeviceWorker:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据设备mac，获取相应的配对工作者</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBGattClient *)getDeviceWorker:(NSString *)<em>deviceMac</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据设备mac，获取相应的配对工作者</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDeviceWorkerCache:worker:delegate:" title="addDeviceWorkerCache:worker:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDeviceWorkerCache:worker:delegate:">&ndash;&nbsp;addDeviceWorkerCache:worker:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据设备mac，保存缓存对象信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addDeviceWorkerCache:(NSString *)<em>deviceMac</em> worker:(IBGattClient *)<em>worker</em> delegate:(id&lt;AHDevicePairingDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据设备mac，保存缓存对象信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removePairingDelegate:" title="removePairingDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removePairingDelegate:">&ndash;&nbsp;removePairingDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据设备mac，删除配对回调的代理对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removePairingDelegate:(NSString *)<em>deviceMac</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据设备mac，删除配对回调的代理对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeDevicePairWorker:" title="removeDevicePairWorker:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeDevicePairWorker:">&ndash;&nbsp;removeDevicePairWorker:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据设备mac，设备配对工作者</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeDevicePairWorker:(NSString *)<em>deviceMac</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据设备mac，设备配对工作者</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/callbackPairedResults:forDevice:delegate:" title="callbackPairedResults:forDevice:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/callbackPairedResults:forDevice:delegate:">&ndash;&nbsp;callbackPairedResults:forDevice:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>回调配对结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)callbackPairedResults:(BTPairState)<em>pairedResult</em> forDevice:(BTDeviceInfo *)<em>lsDevice</em> delegate:(id&lt;AHDevicePairingDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>回调配对结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handlePairResults:forDevice:" title="handlePairResults:forDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handlePairResults:forDevice:">&ndash;&nbsp;handlePairResults:forDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备绑定结果处理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handlePairResults:(BTPairState)<em>pairState</em> forDevice:(BTDeviceInfo *)<em>lsDevice</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备绑定结果处理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AHDevicePlugin+Pair.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2022 AOJMedical. All rights reserved. Updated: 2022-07-31</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

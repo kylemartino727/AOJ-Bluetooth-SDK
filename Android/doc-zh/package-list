@@ -1,0 +1,5 @@
+com.aojmedical.plugin.ble
+com.aojmedical.plugin.ble.data
+com.aojmedical.plugin.ble.data.bpm
+com.aojmedical.plugin.ble.data.po
+com.aojmedical.plugin.ble.data.temp

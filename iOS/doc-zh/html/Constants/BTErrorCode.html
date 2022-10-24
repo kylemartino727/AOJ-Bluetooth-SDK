@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BTErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AHDevicePluginDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AOJMedical</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BTErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AHDevicePluginProfiles.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">BTErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>错误码</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSUInteger, BTErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUnknown</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeParameterInvalid</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUpgradeFileFormatInvalid</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUpgradeFileNameInvalid</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeWorkingStatusError</a> = 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeDeviceNotConnected</a> = 7,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeDeviceUnsupported</a> = 8,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUpgradeFileVerifyError</a> = 9,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUpgradeFileDataReceiveError</a> = 10,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeLowBattery</a> = 11,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeCodeVersionInvalid</a> = 12,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUpgradeFileHeaderVerifyError</a> = 13,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFlashSaveError</a> = 14,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeScanTimeout</a> = 15,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeConnectionFailed</a> = 17,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeConnectionTimeout</a> = 21,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeBluetoothUnavailable</a> = 23,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeAbnormalDisconnect</a> = 24,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeWriteCharacterFailed</a> = 25,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeUserCancel</a> = 26,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeRandomCodeVerifyFailure</a> = 28,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeWriteRandomCodeFailure</a> = 29,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeWritePairedConfirmFailure</a> = 30,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeWriteDeviceIdFailure</a> = 31,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeNoScanResults</a> = 32,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileUpdating</a> = 40,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileNotFound</a> = 41,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileSystemBusy</a> = 42,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileParameterError</a> = 43,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileVerifyError</a> = 44,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileException</a> = 45,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileCancel</a> = 46,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ECodeFileExisted</a> = 47,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="ECodeUnknown"></a><code>ECodeUnknown</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeParameterInvalid"></a><code>ECodeParameterInvalid</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUpgradeFileFormatInvalid"></a><code>ECodeUpgradeFileFormatInvalid</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUpgradeFileNameInvalid"></a><code>ECodeUpgradeFileNameInvalid</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeWorkingStatusError"></a><code>ECodeWorkingStatusError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeDeviceNotConnected"></a><code>ECodeDeviceNotConnected</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeDeviceUnsupported"></a><code>ECodeDeviceUnsupported</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUpgradeFileVerifyError"></a><code>ECodeUpgradeFileVerifyError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUpgradeFileDataReceiveError"></a><code>ECodeUpgradeFileDataReceiveError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeLowBattery"></a><code>ECodeLowBattery</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeCodeVersionInvalid"></a><code>ECodeCodeVersionInvalid</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUpgradeFileHeaderVerifyError"></a><code>ECodeUpgradeFileHeaderVerifyError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFlashSaveError"></a><code>ECodeFlashSaveError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeScanTimeout"></a><code>ECodeScanTimeout</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeConnectionFailed"></a><code>ECodeConnectionFailed</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeConnectionTimeout"></a><code>ECodeConnectionTimeout</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeBluetoothUnavailable"></a><code>ECodeBluetoothUnavailable</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeAbnormalDisconnect"></a><code>ECodeAbnormalDisconnect</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeWriteCharacterFailed"></a><code>ECodeWriteCharacterFailed</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeUserCancel"></a><code>ECodeUserCancel</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeRandomCodeVerifyFailure"></a><code>ECodeRandomCodeVerifyFailure</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeWriteRandomCodeFailure"></a><code>ECodeWriteRandomCodeFailure</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeWritePairedConfirmFailure"></a><code>ECodeWritePairedConfirmFailure</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeWriteDeviceIdFailure"></a><code>ECodeWriteDeviceIdFailure</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeNoScanResults"></a><code>ECodeNoScanResults</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileUpdating"></a><code>ECodeFileUpdating</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileNotFound"></a><code>ECodeFileNotFound</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileSystemBusy"></a><code>ECodeFileSystemBusy</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileParameterError"></a><code>ECodeFileParameterError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileVerifyError"></a><code>ECodeFileVerifyError</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileException"></a><code>ECodeFileException</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileCancel"></a><code>ECodeFileCancel</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ECodeFileExisted"></a><code>ECodeFileExisted</code></dt>
+<dd>
+
+
+<p>错误码</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AHDevicePluginProfiles.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">AHDevicePluginProfiles.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2022 AOJMedical. All rights reserved. Updated: 2022-07-31</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
